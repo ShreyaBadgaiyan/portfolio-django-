@@ -1,0 +1,212 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{%static "css/style.css" %}">
+</head>
+<body>
+    {% comment %} <h1>Hi there</h1>
+    <img src="{%static "images/myimage.png"%}" alt="picture"> {% endcomment %}
+    {% comment %} navbar section {% endcomment %}
+     <nav id="navbar" class="flex s-around bg-color">
+        <div class="left-nav">
+            <h2 class="t-white"></h2>
+        </div>
+        <div class="right-nav">
+            <li>
+                <a href="#home" class="t-white-roboto">
+                    Home
+                    <i class="fa-solid fa-house"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#about" class="t-white-roboto">
+                    About
+                    <i class="fa-solid fa-"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#skills" class="t-white-roboto">
+                    Skills
+                    <i class="fa-solid fa-code"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#projects" class="t-white-roboto">
+                    Projects
+                    <i class="fa-solid fa-house"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="#contact" class="t-white-roboto">
+                    Contact
+                    <i class="fa-solid fa-house"></i>
+                </a>
+            </li>
+
+        
+        </div>
+     </nav>
+
+     {% comment %} Home Section {% endcomment %}
+
+     <section id="home" class="flex s-around sw-80 m-auto">
+        <div class="home-left flext items-center">
+            <div class="home-content">
+                <h6 class="popinss">Hi , I'm</h6>
+                <h1 class="t-white">Shreya Badgaiyan</h1>
+                <h4 class="popinss">Python Developer</h4>
+                <a href="{%static "pdfs/myresume.pdf"%}" target="_blank">
+                <button class="btn popinss">Resume</button>
+                </a>
+
+                <a href="" class="btn live popinss" id="hireme" target="_blank">
+                    Lets Connect
+                </a>
+            </div>
+
+            <div class="home-right flex s-center items-center">
+                <div class="circle flex s-center items-center" id="mainImage">
+                    <img src="{%static 'images/myimage.png'%}" alt="my_image">
+                </div>
+            </div>
+        </div>
+     </section>
+
+     {% comment %} About section {% endcomment %}
+
+     <section id="about">
+        <h1 class="t center my-2 t-white f-2"> About <Menu></Menu></h1>
+        <div class="about-container flex s-around">
+            <div class="about-left flex s-center items-center">
+                <img src="{%static 'images/myimage.png'%}" alt="picture">
+            </div>
+        </div>
+
+        <div class="about-right flex">
+            <div class="about-content">
+                <h1 class="t-white m-b-1 popinss">Shreya Badgaiyan</h1>
+                <p class="t-white popinss">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum odio quae perferendis laborum aperiam doloremque ullam vel labore illum voluptatem fuga eos quaerat sit est aut aspernatur quod, asperiores praesentium, amet sunt harum, earum fugiat sapiente? Similique, optio quisquam! Unde, in iste. Quas distinctio quidem id omnis odio sunt. Doloremque tempore cumque laborum consequatur asperiores qui amet culpa ipsa voluptatem. Dignissimos enim, eius a porro possimus suscipit cupiditate sapiente eveniet quo velit nihil labore nulla at atque exercitationem, ullam consequuntur asperiores praesentium rem iure accusantium quibusdam fuga? Itaque labore, aliquam debitis provident quasi deleniti. Animi rem explicabo saepe sapiente nemo, dolorem fuga consequatur. Velit error vitae impedit architecto rem distinctio eos omnis maxime a voluptate! Ipsam rerum totam, distinctio magnam molestiae ut. Iusto sunt veniam, quo praesentium excepturi odio soluta porro assumenda hic vero mollitia labore quasi adipisci laboriosam corporis, maiores reiciendis iure eos ratione laudantium magni repellendus. Voluptatibus, libero.</p>
+                <a href="" href="btn" id="hireme">Hire me</a>
+            </div>
+        </div>
+
+     </section>
+
+     {% comment %} Skills Section {% endcomment %}
+
+     <section id="skills">
+        <h1 class="t-center my-2 t-white f-2">Skills</h1>
+        <div class="services-container flex s-around h-50">
+            <div class="skills-left flex s-center items-center">
+                <img src="{%static 'images/myimage.png'%}" alt="picture">
+
+            </div>
+            <div class="skills-right flex items-center">
+                <div class="skills-container">
+                    <div class="java-bar p-relative"><span class="bar-content left t-white">Core Java</span></div>
+                    <span class="bar-content right-skills t-white">70%</span>
+
+                    <div class="python-bar p-relative"><span class="bar-content left t-white">Python</span></div>
+                    <span class="bar-content right-skills t-white">70%</span>
+
+                    <div class="django-bar p-relative"><span class="bar-content left t-white">Django web framework</span></div>
+                    <span class="bar-content right-skills t-white">70%</span>
+
+                    <div class="flutter-bar p-relative"><span class="bar-content left t-white">Flutter framework</span></div>
+                    <span class="bar-content right-skills t-white">70%</span>
+
+                    <div class="cpp-bar p-relative"><span class="bar-content left t-white">C++</span></div>
+                    <span class="bar-content right-skills t-white">70%</span>
+
+
+                </div>
+            </div>
+        </div>
+     </section>
+
+     {% comment %} Projects Section {% endcomment %}
+
+     <section id="projects">
+        <h1 class="t-center my-2 t-hite f-2">Projects</h1>
+        <div class="project-container flex s-center">
+        <div class="project-item flex f-col s-center items-center">
+            <h1 class="t-white popinss">Facial Recognition based Attendance system</h1>
+            <p class="t-white popinss">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, magnam nobis? Expedita ducimus vitae sint natus, dolore numquam mollitia. Exercitationem perspiciatis minima dolore pariatur vitae doloribus, asperiores dolorum, cum sapiente suscipit earum, animi eveniet tenetur! Quas voluptate cumque ipsa ad. Libero ad tempore voluptatum minima eaque facilis quo atque magnam distinctio, magni ullam officiis. Voluptatibus aliquid, ab perspiciatis tempora error maxime doloribus reiciendis, illum, maiores neque ducimus dolore non perferendis veniam! Tempora itaque in ut iure ducimus enim officiis ex, est neque, dignissimos rem sequi et fugit sunt esse minima hic beatae ea impedit voluptatibus nostrum ipsum? Unde, soluta cupiditate?</p>
+            <div class="button flex s-around">
+                <a href="" target="_blank" class='btn mx-1 m-top'>Github</a>
+            </div>
+        </div>
+        <div class="project-item flex f-col s-center items-center">
+            <h1 class="t-white popinss">ManoDisha</h1>
+            <p class="t-white popinss">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, magnam nobis? Expedita ducimus vitae sint natus, dolore numquam mollitia. Exercitationem perspiciatis minima dolore pariatur vitae doloribus, asperiores dolorum, cum sapiente suscipit earum, animi eveniet tenetur! Quas voluptate cumque ipsa ad. Libero ad tempore voluptatum minima eaque facilis quo atque magnam distinctio, magni ullam officiis. Voluptatibus aliquid, ab perspiciatis tempora error maxime doloribus reiciendis, illum, maiores neque ducimus dolore non perferendis veniam! Tempora itaque in ut iure ducimus enim officiis ex, est neque, dignissimos rem sequi et fugit sunt esse minima hic beatae ea impedit voluptatibus nostrum ipsum? Unde, soluta cupiditate?</p>
+            <div class="button flex s-around">
+                <a href="" target="_blank" class='btn mx-1 m-top'>Github</a>
+            </div>
+        </div>
+    </div>
+     </section>
+
+     {% comment %} Contact Me section {% endcomment %}
+
+     <section id="contact" class="m-b-1">
+        <h1 class="t-center my-2 t-white f-2">Contact Me</h1>
+        <div class="contact-container flex s-around items-center">
+            <div class="form" id="contactform">
+                <form action="" method="post">
+                    <div class="name form-div">
+                        <input type="text" name="name" id="name" class="popinss" placeholder="Enter your name">
+                    </div>
+                    <div class="email form-div">
+                        <input type="text" name="email" id="" class="popinss" placeholder="Enter your email">
+                    </div>
+                    <div class="phone form-div">
+                        <input type="text" name="phone" id="" class="popinss" placeholder="Enter your phone number">
+                    </div>
+                    <div class="textarea form-div">
+                        <textarea type="text" name="content" id="textarea" rows="10" cols="30" class="popinss" placeholder="Enter your message"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn ppinss" id="submit">Send</button>
+                </form>
+            </div>
+        </div>
+     </section>
+
+     {% comment %} Footer Section {% endcomment %}
+
+     <footer id="footer">
+        <ul class="flex s-center w-80 m-auto my-2 res">
+            <li><a href="#home" class="popinss">Home</a></li>
+            <li><a href="#about" class="popinss">About me</a></li>
+            <li><a href="#skills" class="popinss">Skills</a></li>
+            <li><a href="#projects" class="popinss">Projects</a></li>
+            <li><a href="#contact" class="popinss">Contact me</a></li>
+
+        </ul>
+
+        <ul class="flex s-center w-80 font-awesome">
+            <a href="" target="_blank">
+              <li><i class="fa-brands fa-linkein-in"></i></li>  
+            </a>
+            <a href="" target="_blank">
+                <li><i class="fa-brands fa-github"></i></li>  
+              </a>
+              <a href="" target="_blank">
+                <li><i class="fa-brands fa-instagram"></i></li>  
+              </a>
+        </ul>
+        <p class="t-center my-2 popinss">copy; All Right Reserved -<span class="cpy-white popinss">Error by Night</span> </p>
+     </footer>
+
+
+
+</body>
+</html>
